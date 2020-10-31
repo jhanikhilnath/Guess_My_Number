@@ -68,6 +68,7 @@
     currScore = 20;
     random = Math.floor(Math.random() * 20);
     document.querySelector('.number').textContent = '?';
+    document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector(
       '.label-score'
     ).textContent = `💯 Score: ${currScore}`;
