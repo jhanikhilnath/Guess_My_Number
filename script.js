@@ -1,7 +1,7 @@
 {
   ('use strict');
 
-  let random, cur`Number, currScore, highScore;
+  let random, curNumber, currScore, highScore;
 
   highScore = 0;
 
