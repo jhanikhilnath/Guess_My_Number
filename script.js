@@ -1,7 +1,7 @@
 {
   ('use strict');
 
-  let random, currNumber, currScore, highScore;
+  let random, cur`Number, currScore, highScore;
 
   highScore = 0;
 
@@ -19,7 +19,7 @@
     if (currScore > 0) {
       if (
         document.querySelector('.guess').value !== '' &&
-        document.querySelector('.guess').value <= 20
+        document.querySelector('.guess').value <= 100
       ) {
         currNumber = document.querySelector('.guess').value;
         console.log(currNumber);
@@ -43,7 +43,7 @@
         }
       } else {
         document.querySelector('.message').textContent =
-          'Enter a value And ensure its under or equal to 20';
+          'Enter a value And ensure its under or equal to 100';
       }
     } else {
       document.querySelector('.message').textContent = 'Game Over';
@@ -66,7 +66,7 @@
 
   function init() {
     currScore = 20;
-    random = Math.floor(Math.random() * 20);
+    random = Math.floor(Math.random() * 100);
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector(
