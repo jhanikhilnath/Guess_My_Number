@@ -39,6 +39,7 @@
           document.querySelector('.message').textContent = '✅Correct No. ';
           document.querySelector('.number').textContent = `${random}`;
           document.querySelector('.check').disabled = true;
+
           highScoreFunc();
         }
       } else {
@@ -49,7 +50,9 @@
       document.querySelector('.message').textContent = 'Game Over';
       document.getElementById('bods').classList.add('lose');
       document.querySelector('.check').disabled = true;
-      document.querySelector('.guess').value = '';
+    }
+
+    document.querySelector('.guess').value = '';
   }
 
   const highScoreFunc = function () {
