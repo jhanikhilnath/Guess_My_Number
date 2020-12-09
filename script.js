@@ -73,11 +73,6 @@
       '.label-score'
     ).textContent = `💯 Score: ${currScore}`;
     document.querySelector('.guess').value = '';
-    document.addEventListener('keypress', function (event) {
-    if (event.keyCode === 13 || event.which === 13) {
-      main();
-      }
-    });
     let el = document.getElementById('bods');
     el.classList.remove('victory');
     el.classList.remove('lose');
